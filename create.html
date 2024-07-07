@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create News</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="create-news" class="page">
+      <h1>Create News</h1>
+      <form id="news-form">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="">Select a category</option>
+          <option value="Politics">პოლიტიკა</option>
+          <option value="Science">მეცნიერება</option>
+          <option value="Crime">დანაშაული</option>
+        </select>
+
+        <label for="likes">Likes</label>
+        <input type="number" id="likes" name="likes" required />
+
+        <label for="editor-firstname">Editor FirstName</label>
+        <input
+          type="text"
+          id="editor-firstname"
+          name="editor-firstname"
+          required
+        />
+
+        <label for="editor-lastname">Editor LastName</label>
+        <input
+          type="text"
+          id="editor-lastname"
+          name="editor-lastname"
+          required
+        />
+
+        <button type="button" onclick="location.href='index.html'">
+          Cancel
+        </button>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
